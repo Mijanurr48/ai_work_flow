@@ -5,7 +5,7 @@ def talk_to_brain(prompt):
     url = "http://localhost:1234/v1/chat/completions"
     
     data = {
-        "model": "qwen2.5-1.5b", # This name just needs to be a string for LM Studio
+        "model": "google/gemma-4-e4b", # This name just needs to be a string for LM Studio
         "messages": [
             {"role": "system", "content": "You are a professional business assistant."},
             {"role": "user", "content": prompt}
